@@ -1,0 +1,45 @@
+ID DO REQUISITO,DESCRIÇÃO DO REQUISITO,TIPO,CASO DE USO RELACIONADO,TESTES,FONTE / ORIGEM,PRIORIDADE,STATUS,CÓDIGO / MÓDULO
+RF01,Solicitar análise de solo,Funcional,M1-UC01 – Criar Solicitação,CT-001,User Story – Cliente,Alta,Em desenvolvimento,AnaliseSoloController.java
+RF02,Registrar e enviar solicitação ao engenheiro,Funcional,M1-UC02 – Enviar Solicitação,CT-002,User Story – Cliente,Alta,Em desenvolvimento,AnaliseSoloService.java
+RF03,Engenheiro insere resultados da análise,Funcional,M2-UC1 – Receber Solicitação,CT-003,User Story – Engenheiro,Alta,Em desenvolvimento,AgronomoService.java
+RF04,Gerar recomendações personalizadas,Funcional,M2-UC4 – Revisar Solicitação,CT-004,RN013 / User Story,Alta,Em desenvolvimento,RecomendacaoService.java
+RF05,Cliente recebe notificação da recomendação,Funcional,M1-UC03 – Acompanhar Solicitação,CT-005,RN011,Média,Em desenvolvimento,NotificacaoService.java
+RF06,Cliente aprova ou rejeita recomendações,Funcional,M1-UC03 / M5-U7,CT-006,User Story – Cliente,Alta,Em desenvolvimento,AppClienteController.java
+RF07,Engenheiro revisa recomendações rejeitadas,Funcional,M5-U1 – Analisar motivo,CT-007,RN008,Alta,Em desenvolvimento,RecomendacaoService.java
+RF08,Históricos completos mantidos,Funcional,Todos os UCs,CT-008,RN011,Alta,Em desenvolvimento,HistoricoRepository.java
+RNF01,Envio de notificações em tempo real,Não Func.,M1-UC03,CT-009,RN011,Alta,Em desenvolvimento,PushNotificationService.java
+RNF02,Interface responsiva,Não Func.,Todos,CT-010,Requisito técnico,Média,Em desenvolvimento,FrontendSPA.vue
+RNF03,Armazenamento seguro dos resultados,Não Func.,Todos,CT-011,RN011,Alta,Em desenvolvimento,SecurityConfig.java
+RF09,Solicitar pedido dos produtos,Funcional,M1-UC01,CT-012,User Story – Cliente,Alta,Em desenvolvimento,PedidoController.java
+RF10,Consultor valida pedidos,Funcional,M2-UC5,CT-013,RN001,Alta,Em desenvolvimento,PedidoService.java
+RF11,Financeiro consulta crédito do cliente,Funcional,M3-UC2,CT-014,RN007/RN002,Alta,Em desenvolvimento,CreditoService.java
+RF12,Cliente recebe notificação de aprovação/rejeição,Funcional,M3-UC10,CT-015,RN011,Média,Em desenvolvimento,NotificacaoService.java
+RF13,Possibilidade de reavaliar pedidos rejeitados,Funcional,M5-U1 / M5-U3,CT-016,RN007,Alta,Em desenvolvimento,PedidoController.java
+RNF04,Logs e integridade transacional,Não Func.,M2/M3,CT-017,RN011,Alta,Em desenvolvimento,AuditoriaService.java
+RNF05,Resposta em ? 3s,Não Func.,M2/M3,CT-018,Requisito técnico,Média,Em desenvolvimento,PerformanceMonitor.java
+RF14,Logística consulta estoque,Funcional,M4-UC2,CT-019,RN005,Alta,Em desenvolvimento,EstoqueService.java
+RF15,Separação e atualização de status do pedido,Funcional,M4-UC3,CT-020,RN005,Alta,Em desenvolvimento,LogisticaController.java
+RF16,Emitir NF e boleto automaticamente,Funcional,M3-UC7,CT-021,RN004/RN007,Alta,Em desenvolvimento,FinanceiroService.java
+RF17,Enviar pedido à transportadora,Funcional,M4-UC5,CT-022,RN012,Média,Em desenvolvimento,IntegradorTransportadora.java
+RF18,Cliente acompanha entrega,Funcional,M4-UC10,CT-023,User Story – Cliente,Média,Em desenvolvimento,RastreamentoView.vue
+RF19,Cliente confirma recebimento,Funcional,M4-UC10,CT-024,User Story – Cliente,Média,Em desenvolvimento,AppClienteController.java
+RNF06,Rastreamento atualiza automaticamente,Não Func.,M4-UC9/UC10,CT-025,RN012,Média,Em desenvolvimento,RastreamentoService.java
+RNF07,Segurança dos dados na entrega,Não Func.,M4,CT-026,RN011,Alta,Em desenvolvimento,SecurityConfig.java
+RF20,Consultoria pode cancelar pedidos,Funcional,M5-U1,CT-027,RN007,Alta,Em desenvolvimento,PedidoService.java
+RF21,Cliente notificado de cancelamentos,Funcional,M5-U6,CT-028,RN011,Média,Em desenvolvimento,NotificacaoService.java
+RF22,Engenheiro avalia se o cancelamento exige nova análise,Funcional,M5-U1/U3,CT-029,RN008,Alta,Em desenvolvimento,AgronomoService.java
+RF23,Sistema registra cancelamentos e reanálises,Funcional,Todos,CT-030,RN011,Alta,Em desenvolvimento,HistoricoRepository.java
+RNF08,Consistência entre módulos após cancelamento,Não Func.,Todos,CT-031,RN011,Média,Em desenvolvimento,IntegradorERP.java
+RF24,Suporte via chat/WhatsApp,Funcional,M5-U7,CT-032,User Story – Cliente,Média,Em desenvolvimento,ChatIntegradoService.java
+RF25,Suporte consulta histórico do cliente,Funcional,M5-U7,CT-033,RN011,Média,Em desenvolvimento,HistoricoRepository.java
+RF26,Cliente avalia atendimento e produtos,Funcional,M5-U7,CT-034,User Story – Cliente,Baixa,Em desenvolvimento,AvaliacaoService.java
+RF27,Sistema armazena avaliações,Funcional,M5-U7,CT-035,RN013,Baixa,Em desenvolvimento,AvaliacaoService.java
+RNF09,"Chat 99,5% de disponibilidade",Não Func.,M5,CT-036,RN011,Média,Em desenvolvimento,HealthCheckMonitor.java
+RNF10,Histórico criptografado,Não Func.,M5,CT-037,RN011,Alta,Em desenvolvimento,SecurityConfig.java
+RF28,Gerente visualiza relatórios integrados,Funcional,M6-I9,CT-038,RN013,Alta,Em desenvolvimento,DashboardAnalytics.vue
+RF29,Engenheiro registra lavouras e integra IoT,Funcional,M6-I4/I6/I8,CT-039,User Story – Engenheiro,Alta,Em desenvolvimento,IoTIntegrationService.java
+RF30,Cliente acessa histórico completo,Funcional,M1-UC03 / M6-I9,CT-040,RN011,Alta,Em desenvolvimento,HistoricoView.vue
+RF31,Consolidação de dados em relatórios estratégicos,Funcional,M6-I9,CT-041,RN013,Alta,Em desenvolvimento,BIReportGenerator.java
+RNF11,ERP escalável e multiusuário,Não Func.,Todos,CT-042,Requisito técnico,Alta,Em desenvolvimento,ERPClusterConfig.java
+RNF12,Integração IoT via APIs seguras,Não Func.,M6-I6/I7/I9,CT-043,RN012,Alta,Em desenvolvimento,IoTSecureAPI.java
+RNF13,Dashboard carrega em ? 5s,Não Func.,M6-I9,CT-044,Requisito técnico,Média,Em desenvolvimento,PerformanceMonitor.java
